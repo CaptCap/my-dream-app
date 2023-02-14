@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+section {
+    background-color: bisque;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section h1 {
+    color: blue;
+}
+
+
+
