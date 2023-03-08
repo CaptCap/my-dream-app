@@ -14,10 +14,12 @@
     <hr>
     <!-- <p class="sisennys">{{serverName}}</p> -->
    
-    <p class="sisennys">{{serverCreationStatus}}</p>
+    <!-- <p class="sisennys">{{serverCreationStatus}}</p> -->
+
+    <p *ngIf="serverCreated "; class="sisennys">Server was created! Server name is {{ serverName }} </p>
     
     <!-- <p>{{allowNewServer}} - string interpolation on p-tagit sisällä</p>
     <p [innerHTML]="allowNewServer"> tämä sen sijaan ei näy</p> -->
-    <app-server></app-server>
-    <app-server></app-server>
+    <app-server *ngFor="let server of servers"></app-server>
+  
 </section>
